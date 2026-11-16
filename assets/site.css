@@ -18,3 +18,5 @@ nav{gap:22px}.legal-intro{padding-bottom:55px}.legal-cards{display:grid;grid-tem
 
 /* Full-width company wordmark, without cropping. */
 .logo{width:300px;height:60px;flex-shrink:0;display:flex;align-items:center;overflow:visible}.logo img{position:static;width:100%;height:auto;max-width:100%;object-fit:contain}@media(max-width:1100px){.logo{width:250px}}@media(max-width:600px){.nav{padding-left:20px;padding-right:20px}.logo{width:min(260px,calc(100vw - 130px));height:56px}}
+
+.hero h1.company-intro{font-size:clamp(30px,3.2vw,44px);line-height:1.45;letter-spacing:-1.6px;word-break:keep-all}@media(max-width:600px){.hero h1.company-intro{font-size:clamp(23px,5.8vw,34px);letter-spacing:-1px}}
