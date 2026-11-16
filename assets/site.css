@@ -15,3 +15,6 @@ nav{gap:22px}.legal-intro{padding-bottom:55px}.legal-cards{display:grid;grid-tem
 .price-baselines{padding:16px 0;border-top:1px solid #d4dfcd;border-bottom:1px solid #d4dfcd;margin-bottom:22px}.price-baselines strong,.price-baselines span,.price-baselines small{display:block;line-height:1.8}.price-baselines strong{font-size:16px;color:#285329}.price-baselines span{font-size:12px;margin-top:6px}.price-baselines small{font-size:10px;color:#6b7a62;margin-top:6px}
 
 .quote-comparison{width:100%;border-collapse:collapse;font-size:12px;margin:18px 0}.quote-comparison th,.quote-comparison td{padding:13px 8px;border-bottom:1px solid #cbdac2;text-align:left;line-height:1.8}.quote-comparison th{font-weight:600;width:42%}
+
+/* Full-width company wordmark, without cropping. */
+.logo{width:300px;height:60px;flex-shrink:0;display:flex;align-items:center;overflow:visible}.logo img{position:static;width:100%;height:auto;max-width:100%;object-fit:contain}@media(max-width:1100px){.logo{width:250px}}@media(max-width:600px){.nav{padding-left:20px;padding-right:20px}.logo{width:min(260px,calc(100vw - 130px));height:56px}}
