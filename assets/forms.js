@@ -1,5 +1,5 @@
 const $=s=>document.querySelector(s), money=v=>new Intl.NumberFormat('ko-KR').format(v)+'원';
-const spaceNames={home:'주거 공간',restaurant:'식당 · 카페 · 매장',facility:'의료 · 학교 · 공공시설',other:'기타 공간'};
+const spaceNames={home:'주거 공간',restaurant:'식당 · 카페 · 매장',facility:'의료 · 학교 · 공공시설',haccp:'HACCP업체',other:'기타 공간'};
 function collect(form){const d=new FormData(form);return {space:d.get('space'),area:Number(d.get('area')),scope:d.get('scope')||'unknown',frequency:d.get('frequency')||'monthly',severity:d.get('severity')||'unknown',units:Number(d.get('units')||0),fragranceUnits:Number(d.get('fragranceUnits')||0),services:d.getAll('services'),pests:d.getAll('pests'),signs:d.getAll('signs')}}
 async function api(path,data){const r=await fetch('https://mujinnex-consultations.bigcat2.chatgpt.site'+path,{cache:'no-store',method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});let value;try{value=await r.json()}catch{throw Error('서버 응답을 확인할 수 없습니다. 잠시 후 다시 시도해 주세요.')}if(!r.ok)throw Error(value.error||'처리 중 오류가 발생했습니다.');return value;}
 function displayEstimate(el,e){
