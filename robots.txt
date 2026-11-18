@@ -1,2 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+
 User-agent: Yeti
-Allow:/
+Allow: /
+Disallow: /admin.html
+
+Sitemap: https://www.mujinnex.co.kr/sitemap.xml
